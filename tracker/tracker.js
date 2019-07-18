@@ -60,7 +60,7 @@ function addTrackerInput(){
 
 function logOut(){
   // clear localStorage
-  welcomeCard.text(`Welcome!`);
+  welcomeCard.text(``);
 
   localStorage.removeItem('name');
   removeTrackerInput();
