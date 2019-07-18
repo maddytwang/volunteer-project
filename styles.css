@@ -1,7 +1,23 @@
 body{
   background-color: #f2fcff;
+  font-family: 'Source Serif Pro', serif;
 }
 
+.nameInput {
+  display: none;
+}
+
+.nameInput.active {
+  display: block;
+}
+
+.trackerInput{
+  display:none;
+}
+
+.trackerInput.active {
+  display:block;
+}
 
 .title-all{
   font-family: 'Source Serif Pro', serif;
@@ -27,7 +43,7 @@ body{
 }
 
 .volunteerhands{
-  
+
 }
 
 .quote{
