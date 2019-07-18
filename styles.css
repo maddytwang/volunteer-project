@@ -1,6 +1,13 @@
 body{
-  background-color: #f2fcff;
-  font-family: 'Source Serif Pro', serif;
+
+  background-color: #F2F7FA;
+}
+
+.header-all{
+    background-color: #fbb736;
+    padding-top: 50px;
+    background-color: #fbb736;
+    font-family: 'Source Serif Pro', serif;
 }
 
 .nameInput {
@@ -20,21 +27,22 @@ body{
 }
 
 .title-all{
-  font-family: 'Source Serif Pro', serif;
+  font-family: segoe ui;
   color: #38318D;
   display: flex;
   justify-content: center;
   font-size: 60px;
+  width: 100%;
 }
 
 .menu-all{
   font-family: 'Source Serif Pro', serif;
-  margin: 20px 0px 20px 0px;
+  margin: 0px 0px 20px 0px;
   display:flex;
   justify-content: space-between;
   font-size: 24px;
   padding: 30px;
-  background-color:#fbb736;
+  /* background-color:#fbb736; */
   color: #38318D;
 }
 
@@ -43,13 +51,72 @@ body{
 }
 
 .volunteerhands{
+  width:100%;
+
 
 }
+
 
 .quote{
   font-size: 40px;
   display: flex;
   justify-content: center;
   color: #22687f;
-  margin: 70px;
+  margin: 30px;
+}
+
+.separate{
+  color: #38318d;
+  display:flex;
+  justify-content: center;
+  font-size: 30px;
+  background-color: #ffdc9b;
+  margin-top: 60px;
+}
+
+.stats{
+  font-family: 'Source Serif Pro', serif;
+  font-size:25px;
+  color: #38318d;
+}
+
+.stat1{
+  width: 40%;
+  margin: 20px;
+  font-size: 20px;
+}
+
+.highfive{
+  position:relative;
+  float:right;
+  margin: 0px 250px 0px 0px;
+  width: 200px;
+}
+
+.chunk2{
+  position: relative;
+  float: right;
+  margin: 50px 0px 0px 0px ;
+  width:50%;
+}
+
+.handpaw{
+  position:relative;
+  float:left;
+  margin: 150px 0px 0px 150px;
+  width: 170px;
+}
+
+.chunk3{
+  margin: 400px 0px 0px 0px ;
+}
+
+.handheart{
+  position:relative;
+  float:right;
+  margin: 50px 250px 0px 0px;
+  width: 170px;
+}
+.valuechart{
+  width: 600px;
 }
