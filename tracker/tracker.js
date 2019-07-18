@@ -37,29 +37,37 @@ function welcomeName() {
 function removeNameInput(){
   // delete nameInput div
   $('.nameInput').removeClass('active');
+  console.log(`1`);
 }
 
 function addNameInput(){
   // delete nameInput div
   $('.nameInput').addClass('active');
+  console.log(`2`);
 }
 
 function removeTrackerInput(){
   // delete trackerInput div
   $('.trackerInput').removeClass('active');
+  console.log(`3`);
 }
 
 function addTrackerInput(){
   // delete trackerInput div
   $('.trackerInput').addClass('active');
+  console.log(`4`);
 }
 
 function logOut(){
   // clear localStorage
+  welcomeCard.text(`Welcome!`);
+
   localStorage.removeItem('name');
   removeTrackerInput();
   addNameInput();
-  removeWelcomeText();
+
+  // removeWelcomeText();
+  console.log(`5`);
 }
 
 function removeWelcomeText(){
@@ -72,10 +80,7 @@ function storeName(userName) {
 }
 
 function appendWelcomeCard(userName) {
-  welcomeCard.append(`
-                      <p class = "welcomeUser"> Welcome, ${userName}!
-
-                      `);
+  welcomeCard.text(`Welcome, ${userName}!`);
 
   console.log('user submitted name');
 }
