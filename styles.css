@@ -1,5 +1,5 @@
 body{
-  background-color: #f2fcff;
+  background-color: #F2F7FA;
 }
 
 
@@ -27,7 +27,7 @@ body{
 }
 
 .volunteerhands{
-  
+  width:100%;
 }
 
 .quote{
@@ -35,5 +35,19 @@ body{
   display: flex;
   justify-content: center;
   color: #22687f;
-  margin: 70px;
+  margin: 40px;
+}
+
+.stats{
+  font-family: 'Source Serif Pro', serif;
+  font-size:25px;
+}
+
+.stat1{
+
+}
+
+.valuechart{
+  width: 600px;
+
 }
