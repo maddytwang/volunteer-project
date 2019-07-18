@@ -123,7 +123,7 @@ function createNewContainer() {
                 newContactInfo3: newContactInfo3,
                 newReflection: newReflection};
 
-  // supposed to set item, but i don't know how to set a continuous list
+  // supposed to set item, but i don't know how to set a continuous list and for it to pull it up after reloading
   // localStorage.setItem('organization', JSON.stringify(newOrg));
   // localStorage.setItem('date', newDate);
   // localStorage.setItem('hours', newHours);
