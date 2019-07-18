@@ -15,11 +15,13 @@ var welcomeCard = $('.welcomeCard');
 
 var todayTrackerContainer = $('.todayTrackerContainer');
 var submit = $('.submitBtn');
+var logOutBtn = $('.resetName');
+console.log(logOut);
 
 submit0.on("click", welcomeName);
 submit.on("click", createNewContainer);
 $('.todayTrackerContainer').on("click", ".delete-btn", deleteItem);
-$('.welcomeCard').on("click", ".resetName", logOut);
+logOutBtn.on("click", logOut);
 
 // prints out welcome, (name) after user presses submit0 button
 function welcomeName() {
@@ -35,29 +37,37 @@ function welcomeName() {
 function removeNameInput(){
   // delete nameInput div
   $('.nameInput').removeClass('active');
+  console.log(`1`);
 }
 
 function addNameInput(){
   // delete nameInput div
   $('.nameInput').addClass('active');
+  console.log(`2`);
 }
 
 function removeTrackerInput(){
   // delete trackerInput div
   $('.trackerInput').removeClass('active');
+  console.log(`3`);
 }
 
 function addTrackerInput(){
   // delete trackerInput div
   $('.trackerInput').addClass('active');
+  console.log(`4`);
 }
 
 function logOut(){
   // clear localStorage
+  welcomeCard.text(`Welcome!`);
+
   localStorage.removeItem('name');
-  removeTrackerInput()
+  removeTrackerInput();
   addNameInput();
-  removeWelcomeText();
+
+  // removeWelcomeText();
+  console.log(`5`);
 }
 
 function removeWelcomeText(){
@@ -70,10 +80,7 @@ function storeName(userName) {
 }
 
 function appendWelcomeCard(userName) {
-  welcomeCard.append(`
-                      <p class = "welcomeUser"> Welcome, ${userName}!
-                      <button class = "resetName">Reset</button>
-                      `);
+  welcomeCard.text(`Welcome, ${userName}!`);
 
   console.log('user submitted name');
 }
