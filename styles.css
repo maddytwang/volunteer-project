@@ -113,6 +113,11 @@ body{
 
 .trackerInput.active {
   display:block;
+  margin: 0px 250px 0px 250px;
+  background-color: white;
+  border: 2px dotted #fbb736;
+  color: #267f9d;
+  padding-left: 40px;
 }
 
 .welcomeCard{
@@ -121,8 +126,15 @@ body{
   justify-content: center;
 }
 
-.nameInput{
+.nameInput {
+  display: none;
+}
 
+.nameInput.active {
+  display: block;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .userName{
   width: 10%;
@@ -134,14 +146,12 @@ body{
   margin-bottom: 10px;
   font-size: 16px;
 }
+
 .submit0{
-  width: 10%;
-  height: 25px;
   color: #38318d;
   background-color: #76bed6;
   font-size: 16px;
-  padding: 5px 7px 5px 5px;
-
+  padding: 5px 10px 5px 10px;
   font-family:'Source Serif Pro', serif;
 }
 
@@ -149,4 +159,63 @@ body{
   color: #38318d;
   display: flex;
   flex-direction: column;
+}
+
+.logtext{
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+  font-size: 30px;
+}
+
+.organization{
+  font-family:'Source Serif Pro', serif;
+  color: #38318d;
+}
+
+.date{
+  font-family:'Source Serif Pro', serif;
+  color: #38318d;
+}
+
+.hours{
+  font-family:'Source Serif Pro', serif;
+  color: #38318d;
+}
+
+.contactInfo{
+  font-family:'Source Serif Pro', serif;
+  color: #38318d;
+}
+
+.contactInfo2{
+  font-family:'Source Serif Pro', serif;
+  color: #38318d;
+}
+
+.contactInfo3{
+  font-family:'Source Serif Pro', serif;
+  color: #38318d;
+}
+
+.reflection{
+  font-family:'Source Serif Pro', serif;
+  color: #38318d;
+  width: 160px;
+}
+
+.submitBtn{
+  color: #38318d;
+  background-color: #76bed6;
+  font-size: 12px;
+  padding: 2px 5px 2px 5px;
+  font-family:'Source Serif Pro', serif;
+}
+
+.resetName{
+  color: #38318d;
+  background-color: #76bed6;
+  font-size: 12px;
+  padding: 2px 5px 2px 5px;
+  font-family:'Source Serif Pro', serif;
 }
