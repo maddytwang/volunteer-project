@@ -224,6 +224,173 @@ body{
   font-family:'Source Serif Pro', serif;
 }
 
+/
+
+ .menu-all{
+  font-family: 'Source Serif Pro', serif;
+  margin: 20px 0px 20px 0px;
+  display:flex;
+  justify-content: space-between;
+  font-size: 24px;
+  padding: 30px;
+  background-color:#fbb736;
+  color: #38318D;
+}
+
+.home{
+
+}
+
+.volunteerhands{
+
+}
+
+.quote{
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  color: #22687f;
+  margin: 70px;
+}
+
+
+.resourcesbody{
+  margins:300px, 250px, 300px, 250px;
+  padding: 300px, 300px, 300px, 300px;
+  background: #F2F7FA;
+  text-align: center;
+  font-size: 30px;
+}
+
+ /* .h1{
+  padding:400px 200px 400px 200px;
+  background-color: white;
+} */
+
+.resourcecolumn{
+  padding:500px, 350px 500px 350px;
+  border:3px solid #22687F;
+  height:1500px;
+  width:1000px;
+}
+
+.rselection{
+height: 50px;
+width:auto;
+display:flex;
+background-color: #267F9D;
+justify-content: space-between;
+border:1px solid lightblue;
+button-radius:0px;
+}
+
+.tipsresources{
+  padding: 100px, 100px, 100px, 100px;
+  border-line:1px solid;
+  background-color: lightblue;
+  text-align: center;
+  font-size: 24px;
+}
+
+.tipssubh{
+  font-style: italic;
+  font-size:25px;
+}
+
+.resourceemail{
+  font-size: italic;
+  font-size: 25px;
+  font-color: #38318D;
+}
+
+.tips{
+  border-line:1px solid;
+  background:white;
+}
+
+.lastestresources{
+  padding: 100px, 100px, 100px, 100px;
+  border-line:1px solid;
+  background-color: lightblue;
+  text-align: center;
+  font-size: 24px;
+}
+
+.hereresources{
+  padding: 100px, 100px, 100px, 100px;
+  border-line:1px solid;
+  background-color: lightblue;
+  text-align: center;
+  font-size: 24px;
+}
+
+/* .resourcecolumn{
+  border:1px, solid;
+} */
+
+.abroadresources{
+  padding: 100px, 100px, 100px, 100px;
+  border-line:1px solid;
+  background-color: lightblue;
+  text-align: center;
+  font-size: 24px;
+  }
+
+  .futureresources{
+  padding: 100px, 100px, 100px, 100px;
+  border-line:1px solid;
+  background-color: lightblue;
+  text-align: center;
+  font-size: 24px;
+}
+
+.tipsresources{
+  display:none;
+}
+
+.latestresources{
+  display:none;
+}
+
+.hereresources{
+  display:none;
+}
+
+.abroadresources{
+  display:none;
+}
+
+.futureresources{
+  display:none;
+}
+
+.sideselection{
+  padding: 30px 20px 30px 20px;
+  height:1800px;
+  width:500px;
+  border:3px solid #267F9D;
+  display:flex;
+  flex-direction: row-reverse;
+  flex-direction: column;
+  text-align: center;
+  /* font-size:20px; */
+}
+
+.sidetitle{
+  font-size: 30px;
+}
+
+.blossomstage{
+  height: 600px;
+  object-fit: cover;
+}
+
+.colorrun{
+  /* height:60px;
+  object-fit: cover; */
+}
+
+
 .pastLogs{
   display: none;
 }
