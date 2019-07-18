@@ -31,7 +31,16 @@ function welcomeName() {
   appendWelcomeCard(userName);
   removeNameInput();
   addTrackerInput();
+  addPastLogs();
   clearInputs0();
+}
+
+function addPastLogs() {
+  $('.pastLogs').addClass('active');
+}
+
+function removePastLogs() {
+  $('.pastLogs').removeClass('active');
 }
 
 function removeNameInput(){
@@ -62,9 +71,10 @@ function logOut(){
   // clear localStorage
   welcomeCard.text(``);
 
-  localStorage.removeItem('name');
+  localStorage.clear();
   removeTrackerInput();
   addNameInput();
+  removePastLogs();
 
   // removeWelcomeText();
   console.log(`5`);
@@ -80,7 +90,8 @@ function storeName(userName) {
 }
 
 function appendWelcomeCard(userName) {
-  welcomeCard.text(`Welcome, ${userName}!`);
+  var userInputName = localStorage.getItem('name');
+  welcomeCard.text(`Welcome, ${userInputName}!`);
 
   console.log('user submitted name');
 }
@@ -111,6 +122,15 @@ function createNewContainer() {
                 newContactInfo2: newContactInfo2,
                 newContactInfo3: newContactInfo3,
                 newReflection: newReflection};
+
+  // supposed to set item, but i don't know how to set a continuous list
+  // localStorage.setItem('organization', JSON.stringify(newOrg));
+  // localStorage.setItem('date', newDate);
+  // localStorage.setItem('hours', newHours);
+  // localStorage.setItem('contactInfo', newContactInfo);
+  // localStorage.setItem('contactInfo2', newContactInfo2);
+  // localStorage.setItem('contactInfo3', newContactInfo3);
+  // localStorage.setItem('reflection', newReflection);
 
   appendNewLog(newLog);
   clearInputs();
