@@ -61,7 +61,7 @@ function logOut(){
 }
 
 function removeWelcomeText(){
-  
+  event.target.parentNode.remove();
 }
 
 function storeName(userName) {
