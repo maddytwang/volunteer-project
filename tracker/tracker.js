@@ -1,3 +1,14 @@
+function activeContent() {
+  var currentUser = localStorage.getItem('name');
+
+  if (currentUser) {
+    $('.trackerInput').toggleClass('active');
+  } else {
+    $('.nameInput').toggleClass('active');
+  }
+}
+activeContent()
+
 var userName = $('.userName');
 var submit0 = $('.submit0');
 var welcomeCard = $('.welcomeCard');
@@ -8,15 +19,54 @@ var submit = $('.submitBtn');
 submit0.on("click", welcomeName);
 submit.on("click", createNewContainer);
 $('.todayTrackerContainer').on("click", ".delete-btn", deleteItem);
-$('.welcomeCard').on("click", ".resetName", deleteItem);
+$('.welcomeCard').on("click", ".resetName", logOut);
 
 // prints out welcome, (name) after user presses submit0 button
 function welcomeName() {
   var userName = $('.userName').val();
 
-  appendWelcomeCard(userName);
   storeName(userName);
+  appendWelcomeCard(userName);
+  removeNameInput();
+  addTrackerInput();
   clearInputs0();
+}
+
+function removeNameInput(){
+  // delete nameInput div
+  $('.nameInput').removeClass('active');
+}
+
+function addNameInput(){
+  // delete nameInput div
+  $('.nameInput').addClass('active');
+}
+
+function removeTrackerInput(){
+  // delete trackerInput div
+  $('.trackerInput').removeClass('active');
+}
+
+function addTrackerInput(){
+  // delete trackerInput div
+  $('.trackerInput').addClass('active');
+}
+
+function logOut(){
+  // clear localStorage
+  localStorage.removeItem('name');
+  removeTrackerInput()
+  addNameInput();
+  removeWelcomeText();
+}
+
+function removeWelcomeText(){
+  event.target.parentNode.remove();
+}
+
+function storeName(userName) {
+  localStorage.clear();
+  localStorage.setItem('name', userName);
 }
 
 function appendWelcomeCard(userName) {
@@ -28,17 +78,13 @@ function appendWelcomeCard(userName) {
   console.log('user submitted name');
 }
 
-function storeName(userName) {
-  userName.preventDefault();
-  var name = $('.userName').val();
-  localStorage.clear();
-  localStorage.setItem('name', name);
-}
+
 
 function clearInputs0(event){
   $('.userName').val("");
 }
 
+// if submit pressed again, it'll just .text the current text
 
 
 // prints out the info put into the tracker on a log below
