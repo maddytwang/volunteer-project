@@ -1,5 +1,4 @@
 body{
-
   background-color: #F2F7FA;
 }
 
@@ -8,22 +7,6 @@ body{
     padding-top: 50px;
     background-color: #fbb736;
     font-family: 'Source Serif Pro', serif;
-}
-
-.nameInput {
-  display: none;
-}
-
-.nameInput.active {
-  display: block;
-}
-
-.trackerInput{
-  display:none;
-}
-
-.trackerInput.active {
-  display:block;
 }
 
 .title-all{
@@ -46,14 +29,9 @@ body{
   color: #38318D;
 }
 
-.home{
-
-}
 
 .volunteerhands{
   width:100%;
-
-
 }
 
 
@@ -119,4 +97,53 @@ body{
 }
 .valuechart{
   width: 600px;
+}
+
+.nameInput {
+  display: none;
+}
+
+.nameInput.active {
+  display: block;
+}
+
+.trackerInput{
+  display:none;
+}
+
+.trackerInput.active {
+  display:block;
+}
+
+.welcomeCard{
+  font-size: 40px;
+  display:flex;
+  justify-content: center;
+}
+
+.nameInput{
+
+}
+.userName{
+  width: 10%;
+  height: 25px;
+  font-family:'Source Serif Pro', serif;
+  color: #38318d;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.submit0{
+  color: #38318d;
+  background-color: #76bed6;
+  font-size: 16px;
+  padding: 5px;
+  font-family:'Source Serif Pro', serif;
+}
+
+.trackersection{
+  color: #38318d;
+  display: flex;
+  flex-direction: column;
 }
