@@ -105,6 +105,9 @@ body{
 
 .nameInput.active {
   display: block;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .trackerInput{
@@ -118,6 +121,7 @@ body{
   border: 2px dotted #fbb736;
   color: #267f9d;
   padding-left: 40px;
+  padding-bottom: 10px;
 }
 
 .welcomeCard{
@@ -218,4 +222,21 @@ body{
   font-size: 12px;
   padding: 2px 5px 2px 5px;
   font-family:'Source Serif Pro', serif;
+}
+
+.pastLogs{
+  display: none;
+}
+
+.pastLogs.active{
+  display:block;
+  margin: 0px 250px 0px 250px;
+  background-color: white;
+  border-right: 2px dotted #fbb736;
+  border-left: 2px dotted #fbb736;
+  border-bottom: 2px dotted #fbb736;
+  color: #267f9d;
+  padding-left: 40px;
+  padding-top:10px;
+  padding-bottom: 10px;
 }
