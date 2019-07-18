@@ -1,0 +1,39 @@
+body{
+  background-color: #f2fcff;
+}
+
+
+.title-all{
+  font-family: 'Source Serif Pro', serif;
+  color: #38318D;
+  display: flex;
+  justify-content: center;
+  font-size: 60px;
+}
+
+.menu-all{
+  font-family: 'Source Serif Pro', serif;
+  margin: 20px 0px 20px 0px;
+  display:flex;
+  justify-content: space-between;
+  font-size: 24px;
+  padding: 30px;
+  background-color:#fbb736;
+  color: #38318D;
+}
+
+.home{
+
+}
+
+.volunteerhands{
+  
+}
+
+.quote{
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  color: #22687f;
+  margin: 70px;
+}
