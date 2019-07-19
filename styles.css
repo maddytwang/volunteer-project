@@ -242,6 +242,10 @@ body{
 }
 
 .volunteerhands{
+  width:700px;
+  margin: 0px 0px 0px 275px;
+  display: flex;
+  justify-content: center;
 
 }
 
