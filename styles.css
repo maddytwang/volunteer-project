@@ -246,7 +246,6 @@ body{
   margin: 0px 0px 0px 275px;
   display: flex;
   justify-content: center;
-
 }
 
 .quote{
@@ -507,4 +506,11 @@ justify-content: space-between;
   padding-left: 40px;
   padding-top:10px;
   padding-bottom: 10px;
+}
+
+.hands{
+  width:700px;
+  margin: 0px 0px 0px 275px;
+  display: flex;
+  justify-content: center;
 }
